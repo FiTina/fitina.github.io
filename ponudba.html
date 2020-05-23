@@ -10,8 +10,9 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src = "app2.js"></script>
-        <title>ФTina</title>
+        <script src="hamburgerMenu.js"></script>        <title>ФTina</title>
         <link rel="shortcut icon" href="slike/favicon.ico" type="image/x-icon">
 
     </head>
@@ -30,6 +31,23 @@
             </nav>
 
         </header>
+
+         <!-- Top Navigation Menu -->
+         <div class="hamburger-menu">
+             <a href="index.html" class="active"><img class="logo-mobile" src="slike/logoRed.jpg"></a>
+             <div id="myLinks">
+                 <a href="index.html">Domov</a>
+                 <a href="oMeni.html">O meni</a>
+                 <a href="ponudba.html">Ponudba</a>
+                 <a href="blog.html">Blog</a>
+                 <a href="kontakt.html">Kontakt</a>
+             </div>
+
+             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                 <i class="fa fa-bars"></i>
+             </a>
+         </div>
     </div>
         <main>
 
