@@ -19,6 +19,7 @@ body {
     text-align: center;
     color: firebrick;
     background-image: url("slike/dumbbell.jpg");
+    width: 100%;
 
 }
 
@@ -26,19 +27,20 @@ body {
 /* Left column */
 .leftcolumn {   
   float: left;
-  width: 75%;
+  width: 70%;
+    padding-right: 20px;
 }
 
 /* Right column */
 .rightcolumn {
   float: left;
-  width: 25%;
+  width: 30%;
   padding-left: 20px;
 }
 
 /* Fake image */
 .fakeimg {
-  width: 70%;
+  max-width: 90%;
   margin: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
 }
@@ -51,22 +53,23 @@ body {
 .card {
    background-image: linear-gradient(to bottom right, rgb(25, 25, 25), rgba(25, 25, 25, 0.8));
    color: whitesmoke;
-   padding: 45px;
+   padding: 20px;
    margin-top: 30px;
+    width: 100%;
 }
 
 h2 {
     font-family: 'Tahoma', sans-serif;
     font-weight: lighter;
     text-shadow: 2px 3px 3px black;
-    padding: 20px;
+    padding: 40px 20px 20px 20px;
 }
 
 h3 {
     font-family: 'Tahoma', sans-serif;
     font-weight: lighter;
     text-shadow: 2px 3px 3px black;
-    padding: 20px;
+    padding: 20px
 }
 
 p {
@@ -100,7 +103,7 @@ li:not(.footer-li) {
 }
 
 .thumbnail {
-  width: 150px;
+    max-width: 100%;
   margin: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
 }
@@ -124,10 +127,32 @@ li:not(.footer-li) {
   margin-top: 20px;
 }
 
+video {
+    max-width: 80%;
+    margin: 20px;
+}
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
   }
+    .fakeimg {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .card {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    ol {
+        padding-bottom: 20px;
+    }
+
+    .blogName {
+        font-size: 36px;
+    }
 }
