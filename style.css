@@ -307,9 +307,9 @@ a {
 }
 
 .icons {
-    height: 80px;
+    height: 70px;
     width: auto;
-    margin: 40px;
+    margin: 30px;
     padding: 0;
     border-radius: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
@@ -399,17 +399,17 @@ small {
 /*kontakt*/
 
 .vizitka {
-    height: 380px;
-    width: auto;
-    display: inline-block;
-    margin: 35px 100px;
+    margin: 40px;
+    max-width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
-    float: right;
+
 }
 
 .form {
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 12px;
+    max-width: 100%;
+    margin: 10px 40px;
 }
 
 .naslov-form {
@@ -418,18 +418,18 @@ small {
     text-shadow: 2px 3px 3px black;
     color: whitesmoke;
     font-style: normal;
-    margin-top: 90px;
-    margin-left: 70px;
-    padding-left: 20px;
+    margin: 40px 20px 0 10px;
+    padding-left: 45px;
+
 }
 
 .fb-ig {
-    margin-left: 60px;
+    margin: 0 20px;
 }
 
 input[type=text],
 input[type=submit] {
-    min-width: 450px;
+    min-width: 100%;
     padding: 12px;
     margin: 8px 0;
     display: inline-block;
@@ -619,6 +619,28 @@ input[id=message] {
     .stranke li {
         padding: 0 10px;
     }
+
+    .vizitka {
+        max-width: 100%;
+        margin: 40px 0;
+    }
+
+    .icons {
+        height: 50px;
+        width: auto;
+        margin: 40px 0 20px 20px;
+    }
+
+    .form {
+        margin: 20px;
+    }
+
+    .naslov-form {
+        padding: 0;
+        margin-top: 0;
+        margin-left: 20px;
+        font-size: 20px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -773,6 +795,22 @@ input[id=message] {
 
     .stranke li {
         padding: 0 10px;
+    }
+
+    .vizitka {
+        max-width: 85%;
+        margin: 40px;
+    }
+
+    .naslov-form {
+        padding-left: 30px;
+        margin-top: 20px;
+    }
+
+    .icons {
+        height: 60px;
+        width: auto;
+        margin: 25px;
     }
 
 }
