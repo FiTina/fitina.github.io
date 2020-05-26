@@ -119,25 +119,18 @@ li:not(.footer-li) {
   clear: both;
 }
 
-
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
 video {
     max-width: 100%;
     margin: 20px;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
+@media only screen and (min-width: 600px) and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
   }
+
     .fakeimg {
         max-width: 100%;
         margin: 0;
@@ -153,7 +146,39 @@ video {
     }
 
     .blogName {
-        font-size: 36px;
+        font-size: 35px;
+    }
+
+    video {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .blogName {
+        font-size: 22px;
+        background-image: linear-gradient(to bottom right, rgb(20, 20, 20), rgba(20, 20, 20, 0.8));
+    }
+
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+
+    .fakeimg {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .card {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    ol {
+        padding-bottom: 20px;
     }
 
     video {
