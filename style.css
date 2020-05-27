@@ -25,12 +25,12 @@ ul {
 /* Hide the links inside the navigation menu (except for logo/home) */
 .hamburger-menu #myLinks {
     display: none;
-    background-color: rgb(104, 11, 11);
+    background-image: linear-gradient(to right, rgb(104, 11, 11), black);
 }
 
 /* Style navigation menu links */
 .hamburger-menu a {
-    color: black;
+    color: whitesmoke;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -39,6 +39,10 @@ ul {
     font-weight: bold;
     text-align: right;
     text-shadow: 0.5px 0.5px 2px;
+}
+
+.logo-mobile {
+    color: black;
 }
 
 /* Style the hamburger menu */
