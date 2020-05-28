@@ -6,9 +6,8 @@ var time = 3500;
 
 //image list
 images[0] = "slike/kettlebell.jpg";
-images[1] = "slike/fitness2.jpg";
-images[2] = "slike/trx.jpg";
-images[3] = "slike/fitness3.jpg";
+images[1] = "slike/trx.jpg";
+images[2] = "slike/fitness3.jpg";
 
 //change image
 function changeImg() {
@@ -17,7 +16,7 @@ function changeImg() {
     img.classList.remove("imageAnimation");
     setTimeout(function() {img.classList.add("imageAnimation");}, 8);
 
-    i = (i + 1) % 4;
+    i = (i + 1) % 3;
     // if(i < images.length - 1) {
     //     i++;
     // } else {
