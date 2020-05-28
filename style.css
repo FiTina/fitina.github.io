@@ -25,7 +25,7 @@ ul {
 /* Hide the links inside the navigation menu (except for logo/home) */
 .hamburger-menu #myLinks {
     display: none;
-    background-image: linear-gradient(to right, rgb(104, 11, 11), black);
+    background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), black);
 }
 
 /* Style navigation menu links */
@@ -41,44 +41,45 @@ ul {
     text-shadow: 0.5px 0.5px 2px;
 }
 
-.logo-mobile {
-    color: black;
-}
 
 /* Style the hamburger menu */
 .hamburger-menu a.icon {
-    font-size: 48px;
-    color: black;
+    font-size: 42px;
+    text-shadow: 1px 1px 3px black;
+    color: firebrick;
     display: block;
     position: absolute;
     right: 0;
     top: 7px;
 }
 
-a.icon:active {
-    text-shadow: 1px 1px 3px;
-}
-
-/* Add a grey background color on mouse-over */
-.hamburger-menu a:hover {
+/* Add a background color on mouse-over */
+.hamburger-menu a:hover  {
     background-color: firebrick;
     color: black;
 }
 
+a.icon:hover {
+    background: none;
+    color: firebrick;
+
+}
+
 /* Style the active link (or home/logo) */
 .active {
-    background-image: linear-gradient(to top right, rgb(104, 11, 11), firebrick);
+    background-image: linear-gradient(to right, rgb(104, 11, 11), black);
     box-shadow: 0 5px 20px;
     opacity: 1;
     z-index: -1;
     color: black;
     width: 100%;
-    height: 110px;
+    height: 100px;
 }
 
 .logo-mobile {
-    height: 80px;
-    width: 80px;
+    color: black;
+    height: 70px;
+    width: 70px;
     padding: 0;
     float: left;
     border-radius: 10%;
@@ -490,6 +491,12 @@ textarea {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media only screen and (max-width: 600px) {
+    html body {
+        background-image: linear-gradient(to top right, rgba(20, 20, 20, 0.8), rgb(20, 20, 20));
+        font-size: 100%;
+        margin: 0;
+    }
+
     .stolpecLevo, .stolpecDesno {
         float: none;
         width: 100%;
